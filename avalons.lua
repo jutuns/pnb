@@ -4,11 +4,7 @@
 
 activateScript = false
 
-HWIDZ = {
-    "0F8BFBFF00050654",
-    "078BFBFF00A20F12",
-    "x",
-}
+HWIDZ ="078BFBFF00A20F12" --0F8BFBFF00050654
 function get_hwid()
     local cmd = io.popen("wmic cpu get ProcessorId /format:list")
     if cmd then
@@ -21,10 +17,8 @@ function get_hwid()
     end
 end
 local hwid = get_hwid()
-for _,hw in pairs(HWIDZ) do
-    if hw == hwid then
-        activateScript = true
-    end
+if HWIDZ == hwid then
+    activateScript = true
 end
 if not activateScript then
     print("HWID NOT REGISTERED, CONTACT : JUTUN STORE")
