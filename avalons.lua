@@ -6,7 +6,7 @@ activateScript = false
 
 HWIDZ = {
     "0F8BFBFF00050654",
-    "x",
+    "078BFBFF00A20F12",
     "x",
 }
 function get_hwid()
