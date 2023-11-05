@@ -4,7 +4,7 @@
 
 activateScript = false
 
-HWIDZ ="078BFBFF00A20F12" --0F8BFBFF00050654
+HWIDZ ="0F8BFBFF00050654"
 function get_hwid()
     local cmd = io.popen("wmic cpu get ProcessorId /format:list")
     if cmd then
