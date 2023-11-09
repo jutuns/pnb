@@ -216,7 +216,7 @@ function storeSeed()
                 bot:findPath(tile.x - 1,tile.y)
                 bot:setDirection(false)
                 sleep(100)
-                bot:fastDrop(itmSeed,bot:getInventory():findItem(itmSeed))
+                bot:drop(itmSeed,bot:getInventory():findItem(itmSeed))
                 sleep(100)
                 if bot:getInventory():findItem(itmSeed) == 0 then
                     break
@@ -234,7 +234,7 @@ function storeBlock()
                 bot:findPath(tile.x - 1,tile.y)
                 bot:setDirection(false)
                 sleep(100)
-                bot:fastDrop(itmId,bot:getInventory():findItem(itmId))
+                bot:drop(itmId,bot:getInventory():findItem(itmId))
                 sleep(100)
                 if bot:getInventory():findItem(itmId) == 0 then
                     break
